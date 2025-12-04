@@ -1,8 +1,10 @@
 Sentiment Analysis of IMDB Movie Reviews 
 
+
 Author
 Tugba BULUT
 Master 1 IBD - Techniques d’Apprentissage Artificiel
+
 
 Project Overview:
 
@@ -40,6 +42,7 @@ sentiment-analysis-imdb/
     │   └── train.py    -> ML Training logic, Cross-Validation, and Evaluation.
     └── main_run.py     -> Main pipeline execution, persistence check, and live inference.
     
+    
 
 Dataset
 The Dataset: IMDB Dataset of 50K Movie Reviews
@@ -55,6 +58,7 @@ Volume: 50,000 reviews in total.
 Target Task: Binary Classification (Positive/Negative sentiment).
 
 
+
 Methodology and Model Implementation
 Preprocessing and Feature Engineering
 
@@ -67,6 +71,7 @@ N-grams: Allows the model to recognize multi-word phrases, such as "not good" or
 Negation Handling: This step prevents the system from removing words like "not" or "never," ensuring that the model does not accidentally misread a negative sentence as positive.
 
 Cross-Validation (CV): Repeatedly testing the model on different parts of the training data to confirm that our final performance score is dependable and not just a lucky guess from a single test.
+
 
 Scaling: Three versions of the data are tested: 
         -Original (with no normalisation)
@@ -90,6 +95,7 @@ Evaluation Metrics
     -Confusion Matrix
 
 
+
 Project Execution
 
     1.Install Dependencies: 
@@ -103,6 +109,7 @@ Project Execution
     3. Generate Visualizations:
 
     python src/plot_all_metrics.py
+    
 
 Reports
 
@@ -110,6 +117,8 @@ The report/ folder contains:
     -ROC graphics
     -Confusion matrices
     -Numerical results table
+
+    
 
 Key Results Summary
 
@@ -123,13 +132,15 @@ Decision Tree (CART): Used as the single-tree reference point to demonstrate the
 
 KNN: It proved that standard scaling can destroy the structure of sparse text features, causing catastrophic model failure.
 
+
+
 Possible Improvements
 
--Adding more advanced text preprocessing (lemmatization, bigram filtering, negation scope detection).
+-Adding more advanced text preprocessing 
 
--Testing richer vectorization methods (Word2Vec, GloVe, BERT embeddings).
+-Testing richer vectorization methods
 
 -Evaluating additional models
 
--Add more robust cross-validation (nested CV or increased K-Fold).
-#
+-Add more robust cross-validation
+
