@@ -28,7 +28,7 @@ Project Structure
 
 This project adheres to the standard cookiecutter-data-science layout.
 
-`
+``
 sentiment-analysis-imdb/
 │
 ├── data/
@@ -45,7 +45,7 @@ sentiment-analysis-imdb/
     ├── plot_all_metrics.py -> Final reporting 
     ├── modeling/
     │   └── train.py    -> ML Training logic, Cross-Validation, and Evaluation.
-    └── main_run.py     -> Main pipeline execution, persistence check, and live inference.`
+    └── main_run.py     -> Main pipeline execution, persistence check, and live inference.``
     
     
 
@@ -162,6 +162,7 @@ Possible Improvements
 -Evaluating additional models
 
 -Add more robust cross-validation
+
 
 
 
