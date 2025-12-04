@@ -6,7 +6,8 @@ Tugba BULUT
 Master 1 IBD - Techniques d’Apprentissage Artificiel
 
 
-Project Overview:
+Project Overview
+
 
 This project is centered on applying supervised machine learning techniques to the IMDB Movie Reviews dataset.
 
@@ -22,7 +23,8 @@ This work ensures the final output is a reliable and functional data-driven syst
 
 
 
-Project Structure:
+Project Structure
+
 
 This project adheres to the standard cookiecutter-data-science layout.
 
@@ -67,7 +69,6 @@ Target Task: Binary Classification (Positive/Negative sentiment).
 
 Methodology and Model Implementation
 
-Preprocessing and Feature Engineering
 
 
 Text Cleaning: Implemented a custom cleaning function that preserves negation terms (not, no, etc.) to correctly capture polarity inversion.
@@ -122,7 +123,8 @@ Project Execution
     
 
 
-Reports:
+Reports
+
 
 The report/ folder contains:
     -ROC graphics
@@ -133,6 +135,7 @@ The report/ folder contains:
     
 
 Key Results Summary
+
 
 
 Logistic Regression (LR): Optimal classifier that we are using. Fastest and most reliable model for separating text classes, yielding the highest score.
@@ -150,6 +153,8 @@ KNN: It proved that standard scaling can destroy the structure of sparse text fe
 
 Possible Improvements
 
+
+
 -Adding more advanced text preprocessing 
 
 -Testing richer vectorization methods
@@ -157,5 +162,6 @@ Possible Improvements
 -Evaluating additional models
 
 -Add more robust cross-validation
+
 
 
