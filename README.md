@@ -21,9 +21,12 @@ This work ensures the final output is a reliable and functional data-driven syst
 
 
 
-Project Structure
+
+Project Structure:
+
 This project adheres to the standard cookiecutter-data-science layout.
 
+`
 sentiment-analysis-imdb/
 │
 ├── data/
@@ -40,12 +43,15 @@ sentiment-analysis-imdb/
     ├── plot_all_metrics.py -> Final reporting 
     ├── modeling/
     │   └── train.py    -> ML Training logic, Cross-Validation, and Evaluation.
-    └── main_run.py     -> Main pipeline execution, persistence check, and live inference.
+    └── main_run.py     -> Main pipeline execution, persistence check, and live inference.`
     
     
 
 Dataset
+
+
 The Dataset: IMDB Dataset of 50K Movie Reviews
+
 https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 
 The dataset used is the IMDB Movie Reviews Dataset, who includes 50k review and sentiments.
@@ -60,7 +66,9 @@ Target Task: Binary Classification (Positive/Negative sentiment).
 
 
 Methodology and Model Implementation
+
 Preprocessing and Feature Engineering
+
 
 Text Cleaning: Implemented a custom cleaning function that preserves negation terms (not, no, etc.) to correctly capture polarity inversion.
 
@@ -74,11 +82,13 @@ Cross-Validation (CV): Repeatedly testing the model on different parts of the tr
 
 
 Scaling: Three versions of the data are tested: 
+
         -Original (with no normalisation)
         -Standard Scaler
         -Min Max Scaler
 
 Models Used:
+
     -CART
     -KNN
     -Random Forest
@@ -87,13 +97,13 @@ Models Used:
 
 
 Evaluation Metrics
+
     -F1 Score
     -AUC ROC
     -PR AUC
     -Precision
     -Recall
     -Confusion Matrix
-
 
 
 Project Execution
@@ -111,16 +121,19 @@ Project Execution
     python src/plot_all_metrics.py
     
 
-Reports
+
+Reports:
 
 The report/ folder contains:
     -ROC graphics
     -Confusion matrices
     -Numerical results table
 
+
     
 
 Key Results Summary
+
 
 Logistic Regression (LR): Optimal classifier that we are using. Fastest and most reliable model for separating text classes, yielding the highest score.
 
@@ -134,6 +147,7 @@ KNN: It proved that standard scaling can destroy the structure of sparse text fe
 
 
 
+
 Possible Improvements
 
 -Adding more advanced text preprocessing 
@@ -143,4 +157,5 @@ Possible Improvements
 -Evaluating additional models
 
 -Add more robust cross-validation
+
 
