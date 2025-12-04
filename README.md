@@ -1,4 +1,4 @@
-Sentiment Analysis of IMDB Movie Reviews 
+```Sentiment Analysis of IMDB Movie Reviews 
 
 
 Author
@@ -162,6 +162,7 @@ Possible Improvements
 -Evaluating additional models
 
 -Add more robust cross-validation
+
 
 
 
